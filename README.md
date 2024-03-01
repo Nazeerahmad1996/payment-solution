@@ -11,9 +11,11 @@ Steps to run the app
 
    
 Install all the packages
+
 2. npm i
 
 This will run the server
+
 3. npm start
 
 This command will run the test cases. There are 4 test cases.
