@@ -4,10 +4,10 @@ Steps to run the app
 
 1. Add .env file
 
-    BRAINTREE_MERCHANT_ID= "your merchant id"
-    BRAINTREE_PUBLIC_KEY= "your public id"
-    BRAINTREE_PRIVATE_KEY= "your private key"
-    PORT = 3000
+        BRAINTREE_MERCHANT_ID= "your merchant id"
+        BRAINTREE_PUBLIC_KEY= "your public id"
+        BRAINTREE_PRIVATE_KEY= "your private key"
+        PORT = 3000
 
    
 Install all the packages
