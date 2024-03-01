@@ -22,11 +22,11 @@ This command will run the test cases. There are 4 test cases.
 
 4. npm test
 
-     The result will be like:
-     Test Suites: 1 passed, 1 total
-     Tests:       4 passed, 4 total
-     Snapshots:   0 total
-     Time:        5.8 s, estimated 6 s
+       The result will be like:
+       Test Suites: 1 passed, 1 total
+       Tests:       4 passed, 4 total
+       Snapshots:   0 total
+       Time:        5.8 s, estimated 6 s
 
 
 ## Braintree sandbox
