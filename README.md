@@ -18,9 +18,9 @@ This will run the server
 
 3. npm start
 
-4. npm test
-
 This command will run the test cases. There are 4 test cases.
+
+4. npm test
 
      The result will be like:
      Test Suites: 1 passed, 1 total
