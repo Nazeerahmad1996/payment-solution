@@ -1,0 +1,103 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+    //- Include the script with the nonce
+    script(src='script.js')
+
+    title Payment Form
+    style.
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .payment-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        max-width: 100%;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      select {
+        appearance: none;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+  body
+    div(class='payment-form')
+      h2 Payment Form
+
+      form(onsubmit='submitForm();' id='paymentForm')
+        label(for='amount') Amount:
+        input(type='number' id='amount' name='amount', required, step='0.01')
+
+        label(for='currency') Currency:
+        select(id='currency' name='currency', required)
+          option(value='USD') USD
+          option(value='EUR') EUR
+          option(value='THB') THB
+          option(value='HKD') HKD
+          option(value='SGD') SGD
+          option(value='AUD') AUD
+
+        label(for='customerName') Customer Full Name:
+        input(type='text' id='customerName' name='customerName', required)
+
+        label(for='cardHolderName') Credit Card Holder Name:
+        input(type='text' id='cardHolderName' name='cardHolderName', required)
+
+        label(for='cardNumber') Credit Card Number:
+        input(type='text' id='cardNumber' name='cardNumber', required)
+
+        label(for='cardExpiration') Credit Card Expiration:
+        input(type='text' id='cardExpiration' name='cardExpiration' placeholder='MM/YYYY', required)
+
+        label(for='cardCCV') Credit Card CCV:
+        input(type='text' id='cardCCV' name='cardCCV', required)
+
+        input(type='submit' value='Submit')
