@@ -1,6 +1,6 @@
 # payment-gateway
  
-# Steps to run the app
+Steps to run the app
 
 1. Add .env file
 
@@ -10,13 +10,14 @@
     PORT = 3000
 
    
-# Install all the packages
+Install all the packages
 2. npm i
 
-# This will run the server
+This will run the server
 3. npm start
 
-# This command will run the test cases. There are 4 test casees.
+This command will run the test cases. There are 4 test cases.
+
      The result will be like:
      Test Suites: 1 passed, 1 total
      Tests:       4 passed, 4 total
